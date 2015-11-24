@@ -1688,7 +1688,7 @@ abstract class BlockStorageTest {
       'output' => array('write' => TRUE),
       'precondition_passes' => array('min' => 1, 'max' => 5),
       'skip_blocksize' => array('option' => array('1m', '128k', '64k', '32k', '16k', '8k', '512b')),
-      'skip_workload' => array('option' => array('100/0', '95/5', '65/35', '50/50', '35/65', '5/95')),
+      'skip_workload' => array('option' => array('100/0', '95/5', '70/30', '50/50', '30/70', '5/95')),
       'ss_max_rounds' => array('min' => 5, 'max' => 100),
       'ss_verification' => array('min' => 1, 'max' => 100),
       'target' => array('required' => TRUE, 'write' => TRUE),

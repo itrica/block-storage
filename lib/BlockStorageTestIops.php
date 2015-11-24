@@ -289,7 +289,7 @@ class BlockStorageTestIops extends BlockStorageTest {
     $ssMetrics = array();
     $blockSizes = $this->filterBlocksizes(array('1m', '128k', '64k', '32k', '16k', '8k', '4k', '512b'));
     $lastBlockSize = $blockSizes[count($blockSizes) - 1];
-    $workloads = $this->filterWorkloads(array('100/0', '95/5', '65/35', '50/50', '35/65', '5/95', '0/100'));
+    $workloads = $this->filterWorkloads(array('100/0', '95/5', '70/30', '50/50', '30/70', '5/95', '0/100'));
     
     for($x=1; $x<=$max; $x++) {
       foreach($workloads as $rw) {

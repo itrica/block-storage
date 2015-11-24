@@ -247,7 +247,7 @@ ARGUMENTS:
 
 --skip_workload             workloads to skip during testing. This argument may
                             be repeated. Valid options are:
-                            100/0, 95/5, 65/35, 50/50, 35/65, 5/95
+                            100/0, 95/5, 70/30, 50/50, 30/70, 5/95
 
 --ss_max_rounds             The maximum number of test cycle iterations to 
                             allow for steady state verification. Default is 
@@ -311,7 +311,7 @@ ARGUMENTS:
                               latency:    Latency Test - measures IO response 
                                           times for 3 block sizes (0.5k, 4k and 
                                           8k), and 3 read/write mixes (100/0, 
-                                          65/35 and 0/100). If multiple 
+                                          70/30 and 0/100). If multiple 
                                           'target' devices or volumes are 
                                           specified, latency tests are 
                                           performed sequentially

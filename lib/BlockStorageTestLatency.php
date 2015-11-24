@@ -215,7 +215,7 @@ class BlockStorageTestLatency extends BlockStorageTest {
     $subtitle = NULL;
     switch($section) {
       case '3d-plot-max':
-        $subtitle = 'LAT - 0.5, 4, 8KiB x R, 65:35, W';
+        $subtitle = 'LAT - 0.5, 4, 8KiB x R, 70:30, W';
         break;
       default:
         $subtitle = 'LATENCY - Response Time OIO=1';
@@ -282,7 +282,7 @@ class BlockStorageTestLatency extends BlockStorageTest {
     $ssMetrics = array();
     $blockSizes = $this->filterBlocksizes(array('8k', '4k', '512b'));
     $lastBlockSize = $blockSizes[count($blockSizes) - 1];
-    $workloads = $this->filterWorkloads(array('100/0', '65/35', '0/100'));
+    $workloads = $this->filterWorkloads(array('100/0', '70/30', '0/100'));
     
     for($x=1; $x<=$max; $x++) {
       foreach($workloads as $rw) {
